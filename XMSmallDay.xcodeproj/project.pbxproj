@@ -71,6 +71,7 @@
 		FCD6E8611CDDB9A4001B6A29 /* CityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6E8601CDDB9A4001B6A29 /* CityCollectionViewCell.swift */; };
 		FCD6E8631CDDBEB3001B6A29 /* CityHeadCollectionReusabaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6E8621CDDBEB3001B6A29 /* CityHeadCollectionReusabaleView.swift */; };
 		FCD6E8651CDDCC95001B6A29 /* UIBarButtonItem+XMBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6E8641CDDCC95001B6A29 /* UIBarButtonItem+XMBarButtonItem.swift */; };
+		FCD6E87B1CDDE3C9001B6A29 /* DoubleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6E87A1CDDE3C9001B6A29 /* DoubleTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +195,7 @@
 		FCD6E8601CDDB9A4001B6A29 /* CityCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCell.swift; sourceTree = "<group>"; };
 		FCD6E8621CDDBEB3001B6A29 /* CityHeadCollectionReusabaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityHeadCollectionReusabaleView.swift; sourceTree = "<group>"; };
 		FCD6E8641CDDCC95001B6A29 /* UIBarButtonItem+XMBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+XMBarButtonItem.swift"; sourceTree = "<group>"; };
+		FCD6E87A1CDDE3C9001B6A29 /* DoubleTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				FCD6E8561CDD8AB4001B6A29 /* ExploreViewController.swift */,
+				FCD6E87A1CDDE3C9001B6A29 /* DoubleTextView.swift */,
 			);
 			name = "Explore(探店)";
 			path = Explore;
@@ -714,6 +717,7 @@
 				FCD6E82C1CDD7936001B6A29 /* UIButton+WebCache.m in Sources */,
 				FCD6E8311CDD7936001B6A29 /* UIImageView+WebCache.m in Sources */,
 				FCD6E8271CDD7936001B6A29 /* SDWebImageDecoder.m in Sources */,
+				FCD6E87B1CDDE3C9001B6A29 /* DoubleTextView.swift in Sources */,
 				FCD6E8261CDD7936001B6A29 /* SDWebImageCompat.m in Sources */,
 				FCD6E8421CDD7BC0001B6A29 /* theme.swift in Sources */,
 				FCD6E7851CDD777C001B6A29 /* AppDelegate.swift in Sources */,

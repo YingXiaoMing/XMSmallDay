@@ -15,7 +15,13 @@ class MainViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "cityChange:", name: SD_CurrentCityChange_Notification, object: nil)
         
         cityBtn = TextImageButton(frame: CGRectMake(0, 20, 80, 44))
-        cityBtn .setTitle("北京", forState: .Normal)
+        let user = NSUserDefaults.standardUserDefaults()
+        if let currentCity = user.objectForKey(SD_Current_SelectedCity) as? String{
+            cityBtn.setTitle(currentCity, forState: .Normal)
+        }else{
+            cityBtn .setTitle("北京", forState: .Normal)
+        }
+
         cityBtn.titleLabel?.font = theme.SDNavItemFont
         cityBtn.setTitleColor(UIColor.blackColor(), forState: .Normal)
         cityBtn.setImage(UIImage(named: "home_down"), forState: .Normal)
