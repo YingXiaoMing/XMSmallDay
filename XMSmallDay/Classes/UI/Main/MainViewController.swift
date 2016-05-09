@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "cityChange:", name: SD_CurrentCityChange_Notification, object: nil)
         
-        cityBtn = TextImageButton(frame: CGRectMake(0, 20, 80, 44))
+        cityBtn = TextImageButton(frame: CGRectMake(0, 20, 66, 44))
         let user = NSUserDefaults.standardUserDefaults()
         if let currentCity = user.objectForKey(SD_Current_SelectedCity) as? String{
             cityBtn.setTitle(currentCity, forState: .Normal)

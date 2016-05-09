@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC44321B1CE07AC4006DAB33 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC44321A1CE07AC4006DAB33 /* MainTableView.swift */; };
+		FC44321D1CE07F9C006DAB33 /* EveryDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC44321C1CE07F9C006DAB33 /* EveryDayModel.swift */; };
+		FC44321F1CE082F1006DAB33 /* SwiftDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC44321E1CE082F1006DAB33 /* SwiftDictModel.swift */; };
 		FCD6E7851CDD777C001B6A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6E7841CDD777C001B6A29 /* AppDelegate.swift */; };
 		FCD6E78A1CDD777C001B6A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD6E7881CDD777C001B6A29 /* Main.storyboard */; };
 		FCD6E78C1CDD777C001B6A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD6E78B1CDD777C001B6A29 /* Assets.xcassets */; };
@@ -92,6 +95,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC44321A1CE07AC4006DAB33 /* MainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
+		FC44321C1CE07F9C006DAB33 /* EveryDayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryDayModel.swift; sourceTree = "<group>"; };
+		FC44321E1CE082F1006DAB33 /* SwiftDictModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictModel.swift; sourceTree = "<group>"; };
 		FCD6E7811CDD777C001B6A29 /* XMSmallDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMSmallDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD6E7841CDD777C001B6A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCD6E7891CDD777C001B6A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -294,6 +300,7 @@
 		FCD6E7B31CDD7936001B6A29 /* BusinessModel(业务模型) */ = {
 			isa = PBXGroup;
 			children = (
+				FC44321C1CE07F9C006DAB33 /* EveryDayModel.swift */,
 			);
 			name = "BusinessModel(业务模型)";
 			path = BusinessModel;
@@ -331,6 +338,7 @@
 		FCD6E7C41CDD7936001B6A29 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				FC44321E1CE082F1006DAB33 /* SwiftDictModel.swift */,
 			);
 			name = "Tools(工具)";
 			path = Tools;
@@ -399,6 +407,7 @@
 				FCD6E85E1CDD9C55001B6A29 /* CityViewController.swift */,
 				FCD6E8601CDDB9A4001B6A29 /* CityCollectionViewCell.swift */,
 				FCD6E8621CDDBEB3001B6A29 /* CityHeadCollectionReusabaleView.swift */,
+				FC44321A1CE07AC4006DAB33 /* MainTableView.swift */,
 			);
 			name = "Main(公共)";
 			path = Main;
@@ -715,6 +724,7 @@
 				FCD6E8281CDD7936001B6A29 /* SDWebImageDownloader.m in Sources */,
 				FCD6E8301CDD7936001B6A29 /* UIImageView+HighlightedWebCache.m in Sources */,
 				FCD6E82C1CDD7936001B6A29 /* UIButton+WebCache.m in Sources */,
+				FC44321D1CE07F9C006DAB33 /* EveryDayModel.swift in Sources */,
 				FCD6E8311CDD7936001B6A29 /* UIImageView+WebCache.m in Sources */,
 				FCD6E8271CDD7936001B6A29 /* SDWebImageDecoder.m in Sources */,
 				FCD6E87B1CDDE3C9001B6A29 /* DoubleTextView.swift in Sources */,
@@ -728,6 +738,8 @@
 				FCD6E8291CDD7936001B6A29 /* SDWebImageDownloaderOperation.m in Sources */,
 				FCD6E85B1CDD8B17001B6A29 /* ClassifyViewController.swift in Sources */,
 				FCD6E84D1CDD837E001B6A29 /* UIColor+XMColor.swift in Sources */,
+				FC44321F1CE082F1006DAB33 /* SwiftDictModel.swift in Sources */,
+				FC44321B1CE07AC4006DAB33 /* MainTableView.swift in Sources */,
 				FCD6E82A1CDD7936001B6A29 /* SDWebImageManager.m in Sources */,
 				FCD6E8651CDDCC95001B6A29 /* UIBarButtonItem+XMBarButtonItem.swift in Sources */,
 				FCD6E8441CDD8010001B6A29 /* MainTabBarController.swift in Sources */,
