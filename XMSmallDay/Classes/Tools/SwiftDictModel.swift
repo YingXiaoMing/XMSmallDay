@@ -7,7 +7,9 @@
 //
 
 import Foundation
-
+@objc public protocol DictModelProtocol {
+    static func customClassMapping() -> [String : String]?
+}
 
 public class DictModelManager {
     private static let instance = DictModelManager()
@@ -15,25 +17,95 @@ public class DictModelManager {
         return instance
     }
     //字典转模型
-    public func objectWithDictionary(dict: NSDictionary, cls: AnyObject) -> AnyObject? {
-        //动态获取命名空间
-        let ns = NSBundle.mainBundle().infoDictionary!["CFBundleExectutable"] as! String
-        //模型信息
+    public func objectWithDictionary(dict: NSDictionary, cls: AnyClass) -> AnyObject? {
         
+        // 动态获取命名空间
+        let ns = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
+        
+        // 模型信息
+        let infoDict = fullModelInfo(cls)
+        
+        let obj: AnyObject = (cls as! NSObject.Type).init()
+        
+        autoreleasepool {
+            // 3. 遍历模型字典
+            for (k, v) in infoDict {
+                
+                if let value: AnyObject = dict[k] {
+                    
+                    if v.isEmpty {
+                        if !(value === NSNull()) {
+                            obj.setValue(value, forKey: k)
+                        }
+                        
+                    } else {
+                        let type = "\(value.classForCoder)"
+                        
+                        if type == "NSDictionary" {
+                            
+                            if let subObj: AnyObject = objectWithDictionary(value as! NSDictionary, cls: NSClassFromString(ns + "." + v)!) {
+                                obj.setValue(subObj, forKey: k)
+                            }
+                            
+                        } else if type == "NSArray" {
+                            
+                            if let subObj: AnyObject = objectsWithArray(value as! NSArray, cls: NSClassFromString(ns + "." + v)!) {
+                                obj.setValue(subObj, forKey: k)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        return obj
+    }
+    public func objectsWithArray(array: NSArray, cls: AnyClass) -> NSArray? {
+        
+        var list = [AnyObject]()
+        
+        autoreleasepool { () -> () in
+            for value in array {
+                let type = "\(value.classForCoder)"
+                
+                if type == "NSDictionary" {
+                    if let subObj: AnyObject = objectWithDictionary(value as! NSDictionary, cls: cls) {
+                        list.append(subObj)
+                    }
+                } else if type == "NSArray" {
+                    if let subObj: AnyObject = objectsWithArray(value as! NSArray, cls: cls) {
+                        list.append(subObj)
+                    }
+                }
+            }
+        }
+        
+        if list.count > 0 {
+            return list
+        } else {
+            return nil
+        }
     }
     //加载完整类信息
-    func fullModelInfo(cls: AnyObject) -> [String: String]{
-        //检测缓冲池
-        if let cache = modelCache["\(cls)"]{
+    func fullModelInfo(cls: AnyClass) -> [String: String] {
+        
+        // 检测缓冲池
+        if let cache = modelCache["\(cls)"] {
             return cache
         }
-        var currentCls : AnyObject = cls
+        
+        var currentCls: AnyClass = cls
+        
         var infoDict = [String: String]()
-        var let parent: AnyClass = currentCls.superclass() {
-            
+        while let parent: AnyClass = currentCls.superclass() {
+            infoDict.merge(modelInfo(currentCls))
+            currentCls = parent
         }
         
+        // 写入缓冲池
+        modelCache["\(cls)"] = infoDict
         
+        return infoDict
     }
     //加载类信息
     func modelInfo(cls: AnyClass) -> [String: String]{
@@ -46,12 +118,25 @@ public class DictModelManager {
         //检查类是否实现了协议
         var mappingDict: [String: String]?
         if cls.respondsToSelector("customClassMapping"){
+            mappingDict = cls.customClassMapping()
         }
-        
+        var infoDict = [String: String]()
+        for i in 0..<count {
+            let property = properties[Int(i)]
+            //属性名称
+            let cname = property_getName(property)
+            let name = String.fromCString(cname)!
+            let type = mappingDict![name] ?? ""
+            infoDict[name] = type
+        }
+        free(properties)
+        //写入缓存池
+        modelCache["\(cls)"] = infoDict
+        return infoDict
     }
 
     //模型缓冲
-    var modelCache = [String: [String: String]]()
+    var modelCache = [String: [String : String]]()
 }
 
 
