@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="240" id="KGk-i7-Jjw" customClass="ThemeCell" customModule="XMSmallDay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="239"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moreshadow" translatesAutoresizingMaskIntoConstraints="NO" id="krK-Xe-z53">
+                        <rect key="frame" x="0.0" y="5" width="320" height="234"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gZD-UG-eqk">
+                        <rect key="frame" x="0.0" y="5" width="320" height="234"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不出城的暑假去这里 (杭州篇)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cd-bI-dDv">
+                        <rect key="frame" x="20" y="90" width="280" height="53"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咖啡 醇香 温馨" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYs-b1-06y">
+                        <rect key="frame" x="30" y="148" width="260" height="22"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gZD-UG-eqk" firstAttribute="top" secondItem="krK-Xe-z53" secondAttribute="top" id="3dw-5O-8mi"/>
+                    <constraint firstItem="fYs-b1-06y" firstAttribute="top" secondItem="5cd-bI-dDv" secondAttribute="bottom" constant="5" id="7At-HC-Dca"/>
+                    <constraint firstItem="gZD-UG-eqk" firstAttribute="trailing" secondItem="krK-Xe-z53" secondAttribute="trailing" id="9kw-Ja-hiL"/>
+                    <constraint firstAttribute="trailing" secondItem="5cd-bI-dDv" secondAttribute="trailing" constant="20" id="9qC-67-D5k"/>
+                    <constraint firstAttribute="trailing" secondItem="fYs-b1-06y" secondAttribute="trailing" constant="30" id="FcV-wa-56T"/>
+                    <constraint firstAttribute="bottom" secondItem="krK-Xe-z53" secondAttribute="bottom" id="Hyu-xa-LSn"/>
+                    <constraint firstItem="krK-Xe-z53" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="LWe-cn-63L"/>
+                    <constraint firstItem="5cd-bI-dDv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="90" id="Lk8-4P-nyN"/>
+                    <constraint firstItem="gZD-UG-eqk" firstAttribute="leading" secondItem="krK-Xe-z53" secondAttribute="leading" id="Tmt-wB-VCj"/>
+                    <constraint firstItem="5cd-bI-dDv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ZIG-ft-gUb"/>
+                    <constraint firstAttribute="trailing" secondItem="krK-Xe-z53" secondAttribute="trailing" id="fk1-t6-WpK"/>
+                    <constraint firstItem="krK-Xe-z53" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="skh-MH-MRP"/>
+                    <constraint firstItem="fYs-b1-06y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="wJG-xw-Ps7"/>
+                    <constraint firstItem="gZD-UG-eqk" firstAttribute="bottom" secondItem="krK-Xe-z53" secondAttribute="bottom" id="won-Sa-zRU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="gZD-UG-eqk" id="yq9-0M-Tvf"/>
+                <outlet property="subTitleLabel" destination="fYs-b1-06y" id="Nrc-pY-TaJ"/>
+                <outlet property="titleLabel" destination="5cd-bI-dDv" id="d73-XV-dQF"/>
+            </connections>
+            <point key="canvasLocation" x="349" y="304"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="moreshadow" width="300" height="63"/>
+    </resources>
+</document>

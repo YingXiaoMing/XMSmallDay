@@ -15,6 +15,7 @@ class DoubleTextView: UIView {
     private let bottomLineView: UIView = UIView()
     private var selectedBtn: UIButton?
     private let textFont: UIFont = theme.SDNavItemFont
+    weak var delegate: DoubleTextViewDelegate?
     convenience init(leftText: String, rightText: String){
         self.init()
         //设置左边文字
@@ -22,6 +23,7 @@ class DoubleTextView: UIView {
         //设置右边文字
         setButton(rightTextButton, title: rightText, tag: 101)
         setBottomLine()
+        titleBtnClick(leftTextButton)
         
     }
     private func setBottomLine(){
@@ -50,6 +52,7 @@ class DoubleTextView: UIView {
         sender.selected = true
         selectedBtn = sender
         bottomLineScrollTo(sender.tag - 100)
+        delegate?.doubleTextView(self, didClickBtn: sender, forIndex: sender.tag - 100)
         
     }
     func bottomLineScrollTo(index: Int){
@@ -57,8 +60,14 @@ class DoubleTextView: UIView {
             self.bottomLineView.frame.origin.x = CGFloat(index) * self.bottomLineView.width
         }
     }
+    func clickBtnToIndex(index: Int) {
+        let btn: NoHighlightButton = self.viewWithTag(index + 100) as! NoHighlightButton
+        self.titleBtnClick(btn)
+    }
 }
-
+protocol DoubleTextViewDelegate: NSObjectProtocol {
+    func doubleTextView(doubleTextView: DoubleTextView, didClickBtn btn: UIButton, forIndex index: Int)
+}
 
 
 class NoHighlightButton: UIButton {
