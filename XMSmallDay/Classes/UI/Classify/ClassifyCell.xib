@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="classifyCell" id="opR-m5-ym6" customClass="ClassifyCell" customModule="XMSmallDay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="177" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="177" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quesheng" translatesAutoresizingMaskIntoConstraints="NO" id="g3c-vP-YcM">
+                        <rect key="frame" x="0.0" y="0.0" width="177" height="65"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生活馆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ds0-iM-S1E">
+                        <rect key="frame" x="0.0" y="65" width="177" height="15"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="g3c-vP-YcM" firstAttribute="leading" secondItem="opR-m5-ym6" secondAttribute="leading" id="FWw-Ix-lGV"/>
+                <constraint firstItem="Ds0-iM-S1E" firstAttribute="leading" secondItem="opR-m5-ym6" secondAttribute="leading" id="KA9-XN-Cec"/>
+                <constraint firstItem="Ds0-iM-S1E" firstAttribute="top" secondItem="g3c-vP-YcM" secondAttribute="bottom" id="KSL-zu-p3b"/>
+                <constraint firstAttribute="trailing" secondItem="g3c-vP-YcM" secondAttribute="trailing" id="RzG-fM-XuR"/>
+                <constraint firstItem="Ds0-iM-S1E" firstAttribute="top" secondItem="g3c-vP-YcM" secondAttribute="top" id="aI1-FL-BvY"/>
+                <constraint firstItem="g3c-vP-YcM" firstAttribute="top" secondItem="opR-m5-ym6" secondAttribute="top" id="cRb-Gf-adZ"/>
+                <constraint firstItem="Ds0-iM-S1E" firstAttribute="leading" secondItem="g3c-vP-YcM" secondAttribute="trailing" id="gdv-GZ-wgI"/>
+                <constraint firstAttribute="bottom" secondItem="Ds0-iM-S1E" secondAttribute="bottom" id="hFf-ID-isX"/>
+                <constraint firstAttribute="bottom" secondItem="g3c-vP-YcM" secondAttribute="bottom" constant="15" id="tja-nz-gMq"/>
+                <constraint firstAttribute="trailing" secondItem="Ds0-iM-S1E" secondAttribute="trailing" id="xim-bA-dqM"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="aI1-FL-BvY"/>
+                    <exclude reference="gdv-GZ-wgI"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="classifyImage" destination="g3c-vP-YcM" id="mBY-nH-fB2"/>
+                <outlet property="titleLabel" destination="Ds0-iM-S1E" id="Lrp-Kv-wqO"/>
+            </connections>
+            <point key="canvasLocation" x="382.5" y="290"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="quesheng" width="320" height="200"/>
+    </resources>
+</document>

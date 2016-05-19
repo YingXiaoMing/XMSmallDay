@@ -18,5 +18,6 @@ struct theme {
     static let SDNavTitltFont : UIFont = UIFont.systemFontOfSize(18)
     //ViewController的背景颜色
     static let SDBackgroundColor: UIColor = UIColor.colorWith(255, green: 255, blue: 255, alpha: 1)
-    
+    //webView的背景颜色
+    static let SDWebViewBackgroundColor: UIColor = UIColor.colorWith(245, green: 245, blue: 245, alpha: 1)
 }

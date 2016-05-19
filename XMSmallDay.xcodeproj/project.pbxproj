@@ -11,11 +11,27 @@
 		FC44321B1CE07AC4006DAB33 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC44321A1CE07AC4006DAB33 /* MainTableView.swift */; };
 		FC44321D1CE07F9C006DAB33 /* EveryDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC44321C1CE07F9C006DAB33 /* EveryDayModel.swift */; };
 		FC44321F1CE082F1006DAB33 /* SwiftDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC44321E1CE082F1006DAB33 /* SwiftDictModel.swift */; };
+		FC4EED481CED499700BE55F1 /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EED471CED499700BE55F1 /* ClassDetailViewController.swift */; };
+		FC4EED4A1CED4FB000BE55F1 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EED491CED4FB000BE55F1 /* UserInfoManager.swift */; };
+		FC4EEDA91CED8B1000BE55F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDA81CED8B1000BE55F1 /* CoreGraphics.framework */; };
+		FC4EEDAB1CED8B2A00BE55F1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDAA1CED8B2A00BE55F1 /* SystemConfiguration.framework */; };
+		FC4EEDAD1CED8C0400BE55F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDAC1CED8C0400BE55F1 /* CoreLocation.framework */; };
+		FC4EEDAF1CED8C4700BE55F1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDAE1CED8C4700BE55F1 /* CoreTelephony.framework */; };
+		FC4EEDB11CED901D00BE55F1 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDB01CED901D00BE55F1 /* libc++.1.dylib */; };
+		FC4EEDB31CED903700BE55F1 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDB21CED903700BE55F1 /* libz.1.dylib */; };
+		FC4EEDB51CED905300BE55F1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDB41CED905300BE55F1 /* libsqlite3.dylib */; };
+		FC4EEDB71CED907300BE55F1 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDB61CED907300BE55F1 /* libiconv.2.dylib */; };
+		FC4EEDB91CED907B00BE55F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDB81CED907A00BE55F1 /* Security.framework */; };
+		FC4EEDC01CED9FF900BE55F1 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EEDBF1CED9FF900BE55F1 /* IconView.swift */; };
+		FC4EEDC21CEDAE6200BE55F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EEDC11CEDAE6200BE55F1 /* LoginViewController.swift */; };
 		FC9327C41CE9A59E00CF3905 /* ThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9327C21CE9A59E00CF3905 /* ThemeCell.swift */; };
 		FC9327C51CE9A59E00CF3905 /* ThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9327C31CE9A59E00CF3905 /* ThemeCell.xib */; };
 		FC9327C71CE9A9B200CF3905 /* UIImageView+XMImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9327C61CE9A9B200CF3905 /* UIImageView+XMImage.swift */; };
 		FC9327FB1CE9B44900CF3905 /* EventCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9327FA1CE9B44900CF3905 /* EventCellTableViewCell.swift */; };
 		FC9327FD1CE9B45F00CF3905 /* EventCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9327FC1CE9B45F00CF3905 /* EventCellTableViewCell.xib */; };
+		FCB56C341CEB164B0020E1CC /* ClassifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB56C331CEB164B0020E1CC /* ClassifyModel.swift */; };
+		FCB56C381CEB1C700020E1CC /* ClassifyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB56C371CEB1C700020E1CC /* ClassifyCell.swift */; };
+		FCB56C3A1CEB1C820020E1CC /* ClassifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB56C391CEB1C820020E1CC /* ClassifyCell.xib */; };
 		FCD6E7851CDD777C001B6A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6E7841CDD777C001B6A29 /* AppDelegate.swift */; };
 		FCD6E78A1CDD777C001B6A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD6E7881CDD777C001B6A29 /* Main.storyboard */; };
 		FCD6E78C1CDD777C001B6A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD6E78B1CDD777C001B6A29 /* Assets.xcassets */; };
@@ -78,11 +94,27 @@
 		FC44321A1CE07AC4006DAB33 /* MainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
 		FC44321C1CE07F9C006DAB33 /* EveryDayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryDayModel.swift; sourceTree = "<group>"; };
 		FC44321E1CE082F1006DAB33 /* SwiftDictModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictModel.swift; sourceTree = "<group>"; };
+		FC4EED471CED499700BE55F1 /* ClassDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
+		FC4EED491CED4FB000BE55F1 /* UserInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
+		FC4EEDA81CED8B1000BE55F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FC4EEDAA1CED8B2A00BE55F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FC4EEDAC1CED8C0400BE55F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FC4EEDAE1CED8C4700BE55F1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		FC4EEDB01CED901D00BE55F1 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../../usr/lib/libc++.1.dylib"; sourceTree = "<group>"; };
+		FC4EEDB21CED903700BE55F1 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		FC4EEDB41CED905300BE55F1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		FC4EEDB61CED907300BE55F1 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
+		FC4EEDB81CED907A00BE55F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FC4EEDBF1CED9FF900BE55F1 /* IconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		FC4EEDC11CEDAE6200BE55F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC9327C21CE9A59E00CF3905 /* ThemeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCell.swift; sourceTree = "<group>"; };
 		FC9327C31CE9A59E00CF3905 /* ThemeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeCell.xib; sourceTree = "<group>"; };
 		FC9327C61CE9A9B200CF3905 /* UIImageView+XMImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+XMImage.swift"; sourceTree = "<group>"; };
 		FC9327FA1CE9B44900CF3905 /* EventCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCellTableViewCell.swift; sourceTree = "<group>"; };
 		FC9327FC1CE9B45F00CF3905 /* EventCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCellTableViewCell.xib; sourceTree = "<group>"; };
+		FCB56C331CEB164B0020E1CC /* ClassifyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyModel.swift; sourceTree = "<group>"; };
+		FCB56C371CEB1C700020E1CC /* ClassifyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyCell.swift; sourceTree = "<group>"; };
+		FCB56C391CEB1C820020E1CC /* ClassifyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassifyCell.xib; sourceTree = "<group>"; };
 		FCD6E7811CDD777C001B6A29 /* XMSmallDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMSmallDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD6E7841CDD777C001B6A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCD6E7891CDD777C001B6A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,6 +165,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4EEDB91CED907B00BE55F1 /* Security.framework in Frameworks */,
+				FC4EEDB71CED907300BE55F1 /* libiconv.2.dylib in Frameworks */,
+				FC4EEDB51CED905300BE55F1 /* libsqlite3.dylib in Frameworks */,
+				FC4EEDB31CED903700BE55F1 /* libz.1.dylib in Frameworks */,
+				FC4EEDB11CED901D00BE55F1 /* libc++.1.dylib in Frameworks */,
+				FC4EEDAF1CED8C4700BE55F1 /* CoreTelephony.framework in Frameworks */,
+				FC4EEDAD1CED8C0400BE55F1 /* CoreLocation.framework in Frameworks */,
+				FC4EEDAB1CED8B2A00BE55F1 /* SystemConfiguration.framework in Frameworks */,
+				FC4EEDA91CED8B1000BE55F1 /* CoreGraphics.framework in Frameworks */,
 				F04351F9A80917BE864CC0B0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +207,15 @@
 		F34168C3D25306249583CFA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC4EEDB81CED907A00BE55F1 /* Security.framework */,
+				FC4EEDB61CED907300BE55F1 /* libiconv.2.dylib */,
+				FC4EEDB41CED905300BE55F1 /* libsqlite3.dylib */,
+				FC4EEDB21CED903700BE55F1 /* libz.1.dylib */,
+				FC4EEDB01CED901D00BE55F1 /* libc++.1.dylib */,
+				FC4EEDAE1CED8C4700BE55F1 /* CoreTelephony.framework */,
+				FC4EEDAC1CED8C0400BE55F1 /* CoreLocation.framework */,
+				FC4EEDAA1CED8B2A00BE55F1 /* SystemConfiguration.framework */,
+				FC4EEDA81CED8B1000BE55F1 /* CoreGraphics.framework */,
 				639396A93157EC052E5CFA2C /* libPods.a */,
 			);
 			name = Frameworks;
@@ -242,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				FC44321C1CE07F9C006DAB33 /* EveryDayModel.swift */,
+				FCB56C331CEB164B0020E1CC /* ClassifyModel.swift */,
 			);
 			name = "BusinessModel(业务模型)";
 			path = BusinessModel;
@@ -280,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				FC44321E1CE082F1006DAB33 /* SwiftDictModel.swift */,
+				FC4EED491CED4FB000BE55F1 /* UserInfoManager.swift */,
 			);
 			name = "Tools(工具)";
 			path = Tools;
@@ -304,6 +356,9 @@
 			isa = PBXGroup;
 			children = (
 				FCD6E85A1CDD8B17001B6A29 /* ClassifyViewController.swift */,
+				FCB56C371CEB1C700020E1CC /* ClassifyCell.swift */,
+				FCB56C391CEB1C820020E1CC /* ClassifyCell.xib */,
+				FC4EED471CED499700BE55F1 /* ClassDetailViewController.swift */,
 			);
 			name = "Classify(分类)";
 			path = Classify;
@@ -355,6 +410,7 @@
 				FCD6E8621CDDBEB3001B6A29 /* CityHeadCollectionReusabaleView.swift */,
 				FC44321A1CE07AC4006DAB33 /* MainTableView.swift */,
 				FCDA64D81CE1C24E00334A02 /* SDRefreshHeader.swift */,
+				FC4EEDC11CEDAE6200BE55F1 /* LoginViewController.swift */,
 			);
 			name = "Main(公共)";
 			path = Main;
@@ -364,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				FCD6E8581CDD8AC9001B6A29 /* MeViewController.swift */,
+				FC4EEDBF1CED9FF900BE55F1 /* IconView.swift */,
 			);
 			name = "Me(我的)";
 			path = Me;
@@ -500,6 +557,7 @@
 				FCD6E78F1CDD777C001B6A29 /* LaunchScreen.storyboard in Resources */,
 				FCD6E78C1CDD777C001B6A29 /* Assets.xcassets in Resources */,
 				FCD6E8191CDD7936001B6A29 /* Experience in Resources */,
+				FCB56C3A1CEB1C820020E1CC /* ClassifyCell.xib in Resources */,
 				FCD6E81D1CDD7936001B6A29 /* 三里屯 in Resources */,
 				FCD6E78A1CDD777C001B6A29 /* Main.storyboard in Resources */,
 				FCD6E8221CDD7936001B6A29 /* fourpage@2x.jpg in Resources */,
@@ -589,10 +647,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCD6E8591CDD8AC9001B6A29 /* MeViewController.swift in Sources */,
+				FC4EEDC01CED9FF900BE55F1 /* IconView.swift in Sources */,
 				FCD6E8611CDDB9A4001B6A29 /* CityCollectionViewCell.swift in Sources */,
 				FCD6E8551CDD8A90001B6A29 /* ExperienceViewController.swift in Sources */,
 				FCD6E8511CDD8A1B001B6A29 /* MainViewController.swift in Sources */,
+				FC4EEDC21CEDAE6200BE55F1 /* LoginViewController.swift in Sources */,
 				FC9327FB1CE9B44900CF3905 /* EventCellTableViewCell.swift in Sources */,
+				FCB56C341CEB164B0020E1CC /* ClassifyModel.swift in Sources */,
 				FC44321D1CE07F9C006DAB33 /* EveryDayModel.swift in Sources */,
 				FC9327C71CE9A9B200CF3905 /* UIImageView+XMImage.swift in Sources */,
 				FCD6E87B1CDDE3C9001B6A29 /* DoubleTextView.swift in Sources */,
@@ -603,6 +664,7 @@
 				FCD6E85B1CDD8B17001B6A29 /* ClassifyViewController.swift in Sources */,
 				FCD6E84D1CDD837E001B6A29 /* UIColor+XMColor.swift in Sources */,
 				FC44321F1CE082F1006DAB33 /* SwiftDictModel.swift in Sources */,
+				FC4EED481CED499700BE55F1 /* ClassDetailViewController.swift in Sources */,
 				FC44321B1CE07AC4006DAB33 /* MainTableView.swift in Sources */,
 				FCD6E8651CDDCC95001B6A29 /* UIBarButtonItem+XMBarButtonItem.swift in Sources */,
 				FCD6E8441CDD8010001B6A29 /* MainTabBarController.swift in Sources */,
@@ -610,7 +672,9 @@
 				FCD6E85D1CDD984D001B6A29 /* UIView+XMView.swift in Sources */,
 				FCD6E84F1CDD85D2001B6A29 /* MainNavigationController.swift in Sources */,
 				FCD6E85F1CDD9C55001B6A29 /* CityViewController.swift in Sources */,
+				FCB56C381CEB1C700020E1CC /* ClassifyCell.swift in Sources */,
 				FC9327C41CE9A59E00CF3905 /* ThemeCell.swift in Sources */,
+				FC4EED4A1CED4FB000BE55F1 /* UserInfoManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
