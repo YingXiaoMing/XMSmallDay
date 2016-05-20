@@ -56,6 +56,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         dayTableView = MainTableView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH), style: .Grouped, delegate: self, dataSource: self)
         dayTableView.sectionFooterHeight = 0.1
         dayTableView.sectionHeaderHeight = 0.1
+//        dayTableView.contentInset = UIEdgeInsetsMake(-35, 0, 35, 0)
         backgroundScrollView.addSubview(dayTableView)
         setTableViewHeader(self, refreshingAction: "pullLoadDayData", imageFrame: CGRectMake((AppWidth - SD_RefreshImage_Width)*0.5, 47, SD_RefreshImage_Width, SD_RefreshImage_Height), tableView: dayTableView)
     }

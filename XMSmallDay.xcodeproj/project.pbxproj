@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F04351F9A80917BE864CC0B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 639396A93157EC052E5CFA2C /* libPods.a */; };
+		FC1F10031CEEDFCE00A5E942 /* ExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F10021CEEDFCE00A5E942 /* ExperienceModel.swift */; };
+		FC1F10061CEEE83F00A5E942 /* ExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F10041CEEE83F00A5E942 /* ExperienceCell.swift */; };
+		FC1F10071CEEE83F00A5E942 /* ExperienceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1F10051CEEE83F00A5E942 /* ExperienceCell.xib */; };
+		FC1F10101CEEF93D00A5E942 /* ExperHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F100F1CEEF93D00A5E942 /* ExperHeadView.swift */; };
 		FC44321B1CE07AC4006DAB33 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC44321A1CE07AC4006DAB33 /* MainTableView.swift */; };
 		FC44321D1CE07F9C006DAB33 /* EveryDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC44321C1CE07F9C006DAB33 /* EveryDayModel.swift */; };
 		FC44321F1CE082F1006DAB33 /* SwiftDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC44321E1CE082F1006DAB33 /* SwiftDictModel.swift */; };
@@ -91,6 +95,10 @@
 		1647161E8DA677C1A40EFC52 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		22AA54039BDF164030AF4363 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		639396A93157EC052E5CFA2C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1F10021CEEDFCE00A5E942 /* ExperienceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceModel.swift; sourceTree = "<group>"; };
+		FC1F10041CEEE83F00A5E942 /* ExperienceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceCell.swift; sourceTree = "<group>"; };
+		FC1F10051CEEE83F00A5E942 /* ExperienceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExperienceCell.xib; sourceTree = "<group>"; };
+		FC1F100F1CEEF93D00A5E942 /* ExperHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperHeadView.swift; sourceTree = "<group>"; };
 		FC44321A1CE07AC4006DAB33 /* MainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
 		FC44321C1CE07F9C006DAB33 /* EveryDayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryDayModel.swift; sourceTree = "<group>"; };
 		FC44321E1CE082F1006DAB33 /* SwiftDictModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictModel.swift; sourceTree = "<group>"; };
@@ -293,6 +301,7 @@
 			children = (
 				FC44321C1CE07F9C006DAB33 /* EveryDayModel.swift */,
 				FCB56C331CEB164B0020E1CC /* ClassifyModel.swift */,
+				FC1F10021CEEDFCE00A5E942 /* ExperienceModel.swift */,
 			);
 			name = "BusinessModel(业务模型)";
 			path = BusinessModel;
@@ -368,6 +377,9 @@
 			isa = PBXGroup;
 			children = (
 				FCD6E8541CDD8A90001B6A29 /* ExperienceViewController.swift */,
+				FC1F10041CEEE83F00A5E942 /* ExperienceCell.swift */,
+				FC1F10051CEEE83F00A5E942 /* ExperienceCell.xib */,
+				FC1F100F1CEEF93D00A5E942 /* ExperHeadView.swift */,
 			);
 			name = "Experience(体验)";
 			path = Experience;
@@ -560,6 +572,7 @@
 				FCB56C3A1CEB1C820020E1CC /* ClassifyCell.xib in Resources */,
 				FCD6E81D1CDD7936001B6A29 /* 三里屯 in Resources */,
 				FCD6E78A1CDD777C001B6A29 /* Main.storyboard in Resources */,
+				FC1F10071CEEE83F00A5E942 /* ExperienceCell.xib in Resources */,
 				FCD6E8221CDD7936001B6A29 /* fourpage@2x.jpg in Resources */,
 				FCD6E8171CDD7936001B6A29 /* Details in Resources */,
 				FCD6E81F1CDD7936001B6A29 /* fourpage-375w-667h@2x.jpg in Resources */,
@@ -647,6 +660,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCD6E8591CDD8AC9001B6A29 /* MeViewController.swift in Sources */,
+				FC1F10031CEEDFCE00A5E942 /* ExperienceModel.swift in Sources */,
 				FC4EEDC01CED9FF900BE55F1 /* IconView.swift in Sources */,
 				FCD6E8611CDDB9A4001B6A29 /* CityCollectionViewCell.swift in Sources */,
 				FCD6E8551CDD8A90001B6A29 /* ExperienceViewController.swift in Sources */,
@@ -672,9 +686,11 @@
 				FCD6E85D1CDD984D001B6A29 /* UIView+XMView.swift in Sources */,
 				FCD6E84F1CDD85D2001B6A29 /* MainNavigationController.swift in Sources */,
 				FCD6E85F1CDD9C55001B6A29 /* CityViewController.swift in Sources */,
+				FC1F10061CEEE83F00A5E942 /* ExperienceCell.swift in Sources */,
 				FCB56C381CEB1C700020E1CC /* ClassifyCell.swift in Sources */,
 				FC9327C41CE9A59E00CF3905 /* ThemeCell.swift in Sources */,
 				FC4EED4A1CED4FB000BE55F1 /* UserInfoManager.swift in Sources */,
+				FC1F10101CEEF93D00A5E942 /* ExperHeadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
