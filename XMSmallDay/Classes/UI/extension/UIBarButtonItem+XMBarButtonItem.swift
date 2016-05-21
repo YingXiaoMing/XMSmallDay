@@ -17,7 +17,7 @@ extension UIBarButtonItem{
         button.titleLabel?.font = theme.SDNavItemFont
         button.frame = CGRectMake(0, 0, 60, 44)
         button.titleLabel?.textAlignment = NSTextAlignment.Right
-        button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Right
+        button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
         button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -5)
         button.addTarget(target, action: action, forControlEvents: .TouchUpInside)
         self.init(customView: button)

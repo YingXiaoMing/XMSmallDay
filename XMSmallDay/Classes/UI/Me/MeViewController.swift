@@ -7,6 +7,20 @@
 //
 
 import UIKit
+enum XMMineCellType: Int {
+    //个人中心
+    case MyCenter = 0
+    //我的订单
+    case MyOrder = 1
+    //我的收藏
+    case MyCollect = 2
+    //反馈留言
+    case Feedback = 3
+    //应用推荐
+    case RecommendApp = 4
+}
+
+
 
 class MeViewController: MainViewController {
     private var loginLabel: UILabel!
@@ -109,6 +123,15 @@ extension MeViewController: UITableViewDataSource, UITableViewDelegate{
             cell!.textLabel!.text = "摇一摇 每天都不会有惊喜"
         }
         return cell!
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row == XMMineCellType.Feedback.hashValue{
+            let feedVC = feedbackViewController()
+            navigationController?.pushViewController(feedVC, animated: true)
+        }else if indexPath.row == XMMineCellType.MyOrder.hashValue{
+            let orderVc = OrderViewController()
+            navigationController?.pushViewController(orderVc, animated: true)
+        } 
     }
 }
 

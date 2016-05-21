@@ -28,6 +28,12 @@
 		FC4EEDB91CED907B00BE55F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDB81CED907A00BE55F1 /* Security.framework */; };
 		FC4EEDC01CED9FF900BE55F1 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EEDBF1CED9FF900BE55F1 /* IconView.swift */; };
 		FC4EEDC21CEDAE6200BE55F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EEDC11CEDAE6200BE55F1 /* LoginViewController.swift */; };
+		FC7A7C551CF042A40027AFCB /* feedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A7C541CF042A40027AFCB /* feedbackViewController.swift */; };
+		FC7A7C571CF04FB00027AFCB /* String+XMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A7C561CF04FB00027AFCB /* String+XMString.swift */; };
+		FC7A7C591CF0590C0027AFCB /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A7C581CF0590C0027AFCB /* OrderViewController.swift */; };
+		FC7A7C5B1CF059170027AFCB /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7A7C5A1CF059170027AFCB /* OrderViewController.xib */; };
+		FC7A7C5E1CF05EDA0027AFCB /* MyCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A7C5C1CF05EDA0027AFCB /* MyCenterViewController.swift */; };
+		FC7A7C5F1CF05EDA0027AFCB /* MyCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7A7C5D1CF05EDA0027AFCB /* MyCenterViewController.xib */; };
 		FC9327C41CE9A59E00CF3905 /* ThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9327C21CE9A59E00CF3905 /* ThemeCell.swift */; };
 		FC9327C51CE9A59E00CF3905 /* ThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9327C31CE9A59E00CF3905 /* ThemeCell.xib */; };
 		FC9327C71CE9A9B200CF3905 /* UIImageView+XMImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9327C61CE9A9B200CF3905 /* UIImageView+XMImage.swift */; };
@@ -115,6 +121,12 @@
 		FC4EEDB81CED907A00BE55F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FC4EEDBF1CED9FF900BE55F1 /* IconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		FC4EEDC11CEDAE6200BE55F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FC7A7C541CF042A40027AFCB /* feedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedbackViewController.swift; sourceTree = "<group>"; };
+		FC7A7C561CF04FB00027AFCB /* String+XMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+XMString.swift"; sourceTree = "<group>"; };
+		FC7A7C581CF0590C0027AFCB /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		FC7A7C5A1CF059170027AFCB /* OrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
+		FC7A7C5C1CF05EDA0027AFCB /* MyCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterViewController.swift; sourceTree = "<group>"; };
+		FC7A7C5D1CF05EDA0027AFCB /* MyCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCenterViewController.xib; sourceTree = "<group>"; };
 		FC9327C21CE9A59E00CF3905 /* ThemeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCell.swift; sourceTree = "<group>"; };
 		FC9327C31CE9A59E00CF3905 /* ThemeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeCell.xib; sourceTree = "<group>"; };
 		FC9327C61CE9A9B200CF3905 /* UIImageView+XMImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+XMImage.swift"; sourceTree = "<group>"; };
@@ -406,6 +418,7 @@
 				FCD6E85C1CDD984D001B6A29 /* UIView+XMView.swift */,
 				FCD6E8641CDDCC95001B6A29 /* UIBarButtonItem+XMBarButtonItem.swift */,
 				FC9327C61CE9A9B200CF3905 /* UIImageView+XMImage.swift */,
+				FC7A7C561CF04FB00027AFCB /* String+XMString.swift */,
 			);
 			name = "extension(扩展)";
 			path = extension;
@@ -433,6 +446,11 @@
 			children = (
 				FCD6E8581CDD8AC9001B6A29 /* MeViewController.swift */,
 				FC4EEDBF1CED9FF900BE55F1 /* IconView.swift */,
+				FC7A7C541CF042A40027AFCB /* feedbackViewController.swift */,
+				FC7A7C581CF0590C0027AFCB /* OrderViewController.swift */,
+				FC7A7C5A1CF059170027AFCB /* OrderViewController.xib */,
+				FC7A7C5C1CF05EDA0027AFCB /* MyCenterViewController.swift */,
+				FC7A7C5D1CF05EDA0027AFCB /* MyCenterViewController.xib */,
 			);
 			name = "Me(我的)";
 			path = Me;
@@ -571,6 +589,7 @@
 				FCD6E8191CDD7936001B6A29 /* Experience in Resources */,
 				FCB56C3A1CEB1C820020E1CC /* ClassifyCell.xib in Resources */,
 				FCD6E81D1CDD7936001B6A29 /* 三里屯 in Resources */,
+				FC7A7C5B1CF059170027AFCB /* OrderViewController.xib in Resources */,
 				FCD6E78A1CDD777C001B6A29 /* Main.storyboard in Resources */,
 				FC1F10071CEEE83F00A5E942 /* ExperienceCell.xib in Resources */,
 				FCD6E8221CDD7936001B6A29 /* fourpage@2x.jpg in Resources */,
@@ -586,6 +605,7 @@
 				FCD6E8161CDD7936001B6A29 /* Classify in Resources */,
 				FCD6E8201CDD7936001B6A29 /* fourpage-414w-736h@3x.jpg in Resources */,
 				FCD6E8211CDD7936001B6A29 /* fourpage-568h@2x.jpg in Resources */,
+				FC7A7C5F1CF05EDA0027AFCB /* MyCenterViewController.xib in Resources */,
 				FCD6E81E1CDD7936001B6A29 /* 南锣鼓巷 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,9 +680,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCD6E8591CDD8AC9001B6A29 /* MeViewController.swift in Sources */,
+				FC7A7C5E1CF05EDA0027AFCB /* MyCenterViewController.swift in Sources */,
 				FC1F10031CEEDFCE00A5E942 /* ExperienceModel.swift in Sources */,
 				FC4EEDC01CED9FF900BE55F1 /* IconView.swift in Sources */,
 				FCD6E8611CDDB9A4001B6A29 /* CityCollectionViewCell.swift in Sources */,
+				FC7A7C571CF04FB00027AFCB /* String+XMString.swift in Sources */,
 				FCD6E8551CDD8A90001B6A29 /* ExperienceViewController.swift in Sources */,
 				FCD6E8511CDD8A1B001B6A29 /* MainViewController.swift in Sources */,
 				FC4EEDC21CEDAE6200BE55F1 /* LoginViewController.swift in Sources */,
@@ -682,12 +704,14 @@
 				FC44321B1CE07AC4006DAB33 /* MainTableView.swift in Sources */,
 				FCD6E8651CDDCC95001B6A29 /* UIBarButtonItem+XMBarButtonItem.swift in Sources */,
 				FCD6E8441CDD8010001B6A29 /* MainTabBarController.swift in Sources */,
+				FC7A7C551CF042A40027AFCB /* feedbackViewController.swift in Sources */,
 				FCDA64D91CE1C24E00334A02 /* SDRefreshHeader.swift in Sources */,
 				FCD6E85D1CDD984D001B6A29 /* UIView+XMView.swift in Sources */,
 				FCD6E84F1CDD85D2001B6A29 /* MainNavigationController.swift in Sources */,
 				FCD6E85F1CDD9C55001B6A29 /* CityViewController.swift in Sources */,
 				FC1F10061CEEE83F00A5E942 /* ExperienceCell.swift in Sources */,
 				FCB56C381CEB1C700020E1CC /* ClassifyCell.swift in Sources */,
+				FC7A7C591CF0590C0027AFCB /* OrderViewController.swift in Sources */,
 				FC9327C41CE9A59E00CF3905 /* ThemeCell.swift in Sources */,
 				FC4EED4A1CED4FB000BE55F1 /* UserInfoManager.swift in Sources */,
 				FC1F10101CEEF93D00A5E942 /* ExperHeadView.swift in Sources */,
