@@ -56,11 +56,20 @@ class ExperienceViewController: MainViewController {
     }()
     private lazy var headView: ExperHeadView = {
         let viewH = ExperHeadView(frame: CGRectMake(0, 0, AppWidth, 170))
+        viewH.delegate = self
         return viewH
     }()
     
 }
-extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource {
+extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource, ExperHeadViewDelegate {
+    func experHeadView(headView: ExperHeadView, didClickIndexOfTag index: Int) {
+        let headModel = experModel!.head![index]
+        let pushVC = ExperHeadPushViewController()
+        pushVC.model = headModel
+        
+        navigationController?.pushViewController(pushVC, animated: true)
+        
+    }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return experModel?.list?.count ?? 0
     }

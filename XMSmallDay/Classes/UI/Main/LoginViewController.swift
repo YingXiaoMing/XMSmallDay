@@ -106,12 +106,17 @@ class LoginViewController: UIViewController {
         addBottomViewWithImageView(forgetPwdImageView, tag: 10, frame: CGRectMake(0, 0, loginW * 0.5, bottomViewHeight), imageName: "c1_1", title: "忘记密码")
         registerImageView = UIImageView()
         addBottomViewWithImageView(registerImageView, tag: 11, frame: CGRectMake(loginW * 0.5, 0, loginW * 0.5, bottomViewHeight), imageName: "c1_2", title: "注册")
-        
-        
     }
     
     
     func loginClick() {
+        if phoneTextFile.text!.validateMobile(){
+            SVProgressHUD.showErrorWithStatus("请输入11位的正确手机号", maskType: .Black)
+            return
+        }else if pwdTextFile.text!.isEmpty {
+            SVProgressHUD.showErrorWithStatus("密码不能为空", maskType: .Black)
+            return
+        }
         
     }
     

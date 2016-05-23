@@ -28,6 +28,9 @@
 		FC4EEDB91CED907B00BE55F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDB81CED907A00BE55F1 /* Security.framework */; };
 		FC4EEDC01CED9FF900BE55F1 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EEDBF1CED9FF900BE55F1 /* IconView.swift */; };
 		FC4EEDC21CEDAE6200BE55F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EEDC11CEDAE6200BE55F1 /* LoginViewController.swift */; };
+		FC7596811CF28FCC00FBFB5A /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7596801CF28FCC00FBFB5A /* RecommendViewController.swift */; };
+		FC7596831CF2907100FBFB5A /* LoadAnimatImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7596821CF2907100FBFB5A /* LoadAnimatImageView.swift */; };
+		FC75968C1CF2B1DD00FBFB5A /* ExperHeadPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75968B1CF2B1DD00FBFB5A /* ExperHeadPushViewController.swift */; };
 		FC7A7C551CF042A40027AFCB /* feedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A7C541CF042A40027AFCB /* feedbackViewController.swift */; };
 		FC7A7C571CF04FB00027AFCB /* String+XMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A7C561CF04FB00027AFCB /* String+XMString.swift */; };
 		FC7A7C591CF0590C0027AFCB /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A7C581CF0590C0027AFCB /* OrderViewController.swift */; };
@@ -121,6 +124,9 @@
 		FC4EEDB81CED907A00BE55F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FC4EEDBF1CED9FF900BE55F1 /* IconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		FC4EEDC11CEDAE6200BE55F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FC7596801CF28FCC00FBFB5A /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		FC7596821CF2907100FBFB5A /* LoadAnimatImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadAnimatImageView.swift; sourceTree = "<group>"; };
+		FC75968B1CF2B1DD00FBFB5A /* ExperHeadPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperHeadPushViewController.swift; sourceTree = "<group>"; };
 		FC7A7C541CF042A40027AFCB /* feedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedbackViewController.swift; sourceTree = "<group>"; };
 		FC7A7C561CF04FB00027AFCB /* String+XMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+XMString.swift"; sourceTree = "<group>"; };
 		FC7A7C581CF0590C0027AFCB /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
@@ -392,6 +398,7 @@
 				FC1F10041CEEE83F00A5E942 /* ExperienceCell.swift */,
 				FC1F10051CEEE83F00A5E942 /* ExperienceCell.xib */,
 				FC1F100F1CEEF93D00A5E942 /* ExperHeadView.swift */,
+				FC75968B1CF2B1DD00FBFB5A /* ExperHeadPushViewController.swift */,
 			);
 			name = "Experience(体验)";
 			path = Experience;
@@ -436,6 +443,7 @@
 				FC44321A1CE07AC4006DAB33 /* MainTableView.swift */,
 				FCDA64D81CE1C24E00334A02 /* SDRefreshHeader.swift */,
 				FC4EEDC11CEDAE6200BE55F1 /* LoginViewController.swift */,
+				FC7596821CF2907100FBFB5A /* LoadAnimatImageView.swift */,
 			);
 			name = "Main(公共)";
 			path = Main;
@@ -451,6 +459,7 @@
 				FC7A7C5A1CF059170027AFCB /* OrderViewController.xib */,
 				FC7A7C5C1CF05EDA0027AFCB /* MyCenterViewController.swift */,
 				FC7A7C5D1CF05EDA0027AFCB /* MyCenterViewController.xib */,
+				FC7596801CF28FCC00FBFB5A /* RecommendViewController.swift */,
 			);
 			name = "Me(我的)";
 			path = Me;
@@ -683,10 +692,12 @@
 				FC7A7C5E1CF05EDA0027AFCB /* MyCenterViewController.swift in Sources */,
 				FC1F10031CEEDFCE00A5E942 /* ExperienceModel.swift in Sources */,
 				FC4EEDC01CED9FF900BE55F1 /* IconView.swift in Sources */,
+				FC7596831CF2907100FBFB5A /* LoadAnimatImageView.swift in Sources */,
 				FCD6E8611CDDB9A4001B6A29 /* CityCollectionViewCell.swift in Sources */,
 				FC7A7C571CF04FB00027AFCB /* String+XMString.swift in Sources */,
 				FCD6E8551CDD8A90001B6A29 /* ExperienceViewController.swift in Sources */,
 				FCD6E8511CDD8A1B001B6A29 /* MainViewController.swift in Sources */,
+				FC75968C1CF2B1DD00FBFB5A /* ExperHeadPushViewController.swift in Sources */,
 				FC4EEDC21CEDAE6200BE55F1 /* LoginViewController.swift in Sources */,
 				FC9327FB1CE9B44900CF3905 /* EventCellTableViewCell.swift in Sources */,
 				FCB56C341CEB164B0020E1CC /* ClassifyModel.swift in Sources */,
@@ -701,6 +712,7 @@
 				FCD6E84D1CDD837E001B6A29 /* UIColor+XMColor.swift in Sources */,
 				FC44321F1CE082F1006DAB33 /* SwiftDictModel.swift in Sources */,
 				FC4EED481CED499700BE55F1 /* ClassDetailViewController.swift in Sources */,
+				FC7596811CF28FCC00FBFB5A /* RecommendViewController.swift in Sources */,
 				FC44321B1CE07AC4006DAB33 /* MainTableView.swift in Sources */,
 				FCD6E8651CDDCC95001B6A29 /* UIBarButtonItem+XMBarButtonItem.swift in Sources */,
 				FCD6E8441CDD8010001B6A29 /* MainTabBarController.swift in Sources */,

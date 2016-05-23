@@ -131,7 +131,13 @@ extension MeViewController: UITableViewDataSource, UITableViewDelegate{
         }else if indexPath.row == XMMineCellType.MyOrder.hashValue{
             let orderVc = OrderViewController()
             navigationController?.pushViewController(orderVc, animated: true)
-        } 
+        } else if indexPath.row == XMMineCellType.RecommendApp.hashValue {
+            let remVC = RecommendViewController()
+            navigationController?.pushViewController(remVC, animated: true)
+        } else if indexPath.row == XMMineCellType.MyCenter.hashValue {
+            let centerVC = MyCenterViewController()
+            navigationController?.pushViewController(centerVC, animated: true)
+        }
     }
 }
 

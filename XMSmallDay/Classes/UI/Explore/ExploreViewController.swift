@@ -40,6 +40,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         doubleTextView.delegate = self
         doubleTextView.frame = CGRectMake(0, 0, 120, 44)
         navigationItem.titleView = doubleTextView
+        
     }
     private func setScrollView(){
         self.automaticallyAdjustsScrollViewInsets = false

@@ -9,15 +9,13 @@
 import UIKit
 public let DeatailCellHeight: CGFloat = 220
 class ClassDetailViewController: UIViewController {
-    
-    
+   
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = theme.SDBackgroundColor
     }
-
-
 }
+

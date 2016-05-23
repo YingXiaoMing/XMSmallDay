@@ -8,6 +8,7 @@
 
 import UIKit
 class ExperHeadView: UIView, UIScrollViewDelegate{
+    weak var delegate: ExperHeadViewDelegate?
     var experModel: ExperienceModel? {
         didSet {
             if experModel?.list?.count > 0 {
@@ -26,7 +27,7 @@ class ExperHeadView: UIView, UIScrollViewDelegate{
         }
     }
     func imageClick(tap: UITapGestureRecognizer){
-        
+        delegate?.experHeadView(self, didClickIndexOfTag: tap.view!.tag - 1000)
     }
     
     override init(frame: CGRect) {
@@ -68,7 +69,10 @@ extension ExperHeadView {
         page.currentPage = flag
     }
 }
-
+//MARK:- 协议
+protocol ExperHeadViewDelegate: NSObjectProtocol {
+    func experHeadView(headView: ExperHeadView, didClickIndexOfTag  index:Int)
+}
 
 
 

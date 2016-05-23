@@ -7,6 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCenterViewController" customModule="XMSmallDay" customModuleProvider="target">
             <connections>
+                <outlet property="acountNameLabel" destination="Zdd-N7-c4Q" id="pEB-XO-s46"/>
+                <outlet property="alertPwdView" destination="lBv-eU-sP0" id="cGB-wg-7xw"/>
+                <outlet property="iconView" destination="6Ls-MB-vln" id="6Cu-xk-J5b"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
