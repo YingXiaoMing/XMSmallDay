@@ -79,4 +79,10 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource, 
         cell.eventModel = eventModel
         return cell
     }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let detailVC = DetailViewController()
+        let eventModel = experModel!.list![indexPath.row]
+        detailVC.model = eventModel
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }

@@ -28,15 +28,23 @@
 		FC4EEDB91CED907B00BE55F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4EEDB81CED907A00BE55F1 /* Security.framework */; };
 		FC4EEDC01CED9FF900BE55F1 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EEDBF1CED9FF900BE55F1 /* IconView.swift */; };
 		FC4EEDC21CEDAE6200BE55F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EEDC11CEDAE6200BE55F1 /* LoginViewController.swift */; };
+		FC5079301CF8247D00FB05A4 /* BuyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC50792F1CF8247D00FB05A4 /* BuyDetailViewController.swift */; };
+		FC5079331CF82CAA00FB05A4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5079311CF82CAA00FB05A4 /* SignUpViewController.swift */; };
+		FC5079341CF82CAA00FB05A4 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5079321CF82CAA00FB05A4 /* SignUpViewController.xib */; };
 		FC7596811CF28FCC00FBFB5A /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7596801CF28FCC00FBFB5A /* RecommendViewController.swift */; };
 		FC7596831CF2907100FBFB5A /* LoadAnimatImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7596821CF2907100FBFB5A /* LoadAnimatImageView.swift */; };
 		FC75968C1CF2B1DD00FBFB5A /* ExperHeadPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75968B1CF2B1DD00FBFB5A /* ExperHeadPushViewController.swift */; };
+		FC7A72381CF6C76D00EEE87F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A72371CF6C76D00EEE87F /* DetailViewController.swift */; };
+		FC7A723A1CF6C81700EEE87F /* ExperienceWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A72391CF6C81700EEE87F /* ExperienceWebView.swift */; };
+		FC7A72401CF6F02200EEE87F /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7A723F1CF6F02200EEE87F /* RegExCategories.m */; };
 		FC7A7C551CF042A40027AFCB /* feedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A7C541CF042A40027AFCB /* feedbackViewController.swift */; };
 		FC7A7C571CF04FB00027AFCB /* String+XMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A7C561CF04FB00027AFCB /* String+XMString.swift */; };
 		FC7A7C591CF0590C0027AFCB /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A7C581CF0590C0027AFCB /* OrderViewController.swift */; };
 		FC7A7C5B1CF059170027AFCB /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7A7C5A1CF059170027AFCB /* OrderViewController.xib */; };
 		FC7A7C5E1CF05EDA0027AFCB /* MyCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A7C5C1CF05EDA0027AFCB /* MyCenterViewController.swift */; };
 		FC7A7C5F1CF05EDA0027AFCB /* MyCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7A7C5D1CF05EDA0027AFCB /* MyCenterViewController.xib */; };
+		FC9045E91CF7DDB900601008 /* ExploreBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9045E81CF7DDB900601008 /* ExploreBottomView.swift */; };
+		FC9045EB1CF7DDE200601008 /* ExploreBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9045EA1CF7DDE200601008 /* ExploreBottomView.xib */; };
 		FC9327C41CE9A59E00CF3905 /* ThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9327C21CE9A59E00CF3905 /* ThemeCell.swift */; };
 		FC9327C51CE9A59E00CF3905 /* ThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9327C31CE9A59E00CF3905 /* ThemeCell.xib */; };
 		FC9327C71CE9A9B200CF3905 /* UIImageView+XMImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9327C61CE9A9B200CF3905 /* UIImageView+XMImage.swift */; };
@@ -124,15 +132,24 @@
 		FC4EEDB81CED907A00BE55F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FC4EEDBF1CED9FF900BE55F1 /* IconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		FC4EEDC11CEDAE6200BE55F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FC50792F1CF8247D00FB05A4 /* BuyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyDetailViewController.swift; sourceTree = "<group>"; };
+		FC5079311CF82CAA00FB05A4 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FC5079321CF82CAA00FB05A4 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		FC7596801CF28FCC00FBFB5A /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		FC7596821CF2907100FBFB5A /* LoadAnimatImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadAnimatImageView.swift; sourceTree = "<group>"; };
 		FC75968B1CF2B1DD00FBFB5A /* ExperHeadPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperHeadPushViewController.swift; sourceTree = "<group>"; };
+		FC7A72371CF6C76D00EEE87F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FC7A72391CF6C81700EEE87F /* ExperienceWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceWebView.swift; sourceTree = "<group>"; };
+		FC7A723E1CF6F02200EEE87F /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
+		FC7A723F1CF6F02200EEE87F /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 		FC7A7C541CF042A40027AFCB /* feedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedbackViewController.swift; sourceTree = "<group>"; };
 		FC7A7C561CF04FB00027AFCB /* String+XMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+XMString.swift"; sourceTree = "<group>"; };
 		FC7A7C581CF0590C0027AFCB /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		FC7A7C5A1CF059170027AFCB /* OrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
 		FC7A7C5C1CF05EDA0027AFCB /* MyCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterViewController.swift; sourceTree = "<group>"; };
 		FC7A7C5D1CF05EDA0027AFCB /* MyCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCenterViewController.xib; sourceTree = "<group>"; };
+		FC9045E81CF7DDB900601008 /* ExploreBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreBottomView.swift; sourceTree = "<group>"; };
+		FC9045EA1CF7DDE200601008 /* ExploreBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreBottomView.xib; sourceTree = "<group>"; };
 		FC9327C21CE9A59E00CF3905 /* ThemeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCell.swift; sourceTree = "<group>"; };
 		FC9327C31CE9A59E00CF3905 /* ThemeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeCell.xib; sourceTree = "<group>"; };
 		FC9327C61CE9A9B200CF3905 /* UIImageView+XMImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+XMImage.swift"; sourceTree = "<group>"; };
@@ -399,6 +416,13 @@
 				FC1F10051CEEE83F00A5E942 /* ExperienceCell.xib */,
 				FC1F100F1CEEF93D00A5E942 /* ExperHeadView.swift */,
 				FC75968B1CF2B1DD00FBFB5A /* ExperHeadPushViewController.swift */,
+				FC7A72371CF6C76D00EEE87F /* DetailViewController.swift */,
+				FC7A72391CF6C81700EEE87F /* ExperienceWebView.swift */,
+				FC9045E81CF7DDB900601008 /* ExploreBottomView.swift */,
+				FC9045EA1CF7DDE200601008 /* ExploreBottomView.xib */,
+				FC50792F1CF8247D00FB05A4 /* BuyDetailViewController.swift */,
+				FC5079311CF82CAA00FB05A4 /* SignUpViewController.swift */,
+				FC5079321CF82CAA00FB05A4 /* SignUpViewController.xib */,
 			);
 			name = "Experience(体验)";
 			path = Experience;
@@ -426,6 +450,8 @@
 				FCD6E8641CDDCC95001B6A29 /* UIBarButtonItem+XMBarButtonItem.swift */,
 				FC9327C61CE9A9B200CF3905 /* UIImageView+XMImage.swift */,
 				FC7A7C561CF04FB00027AFCB /* String+XMString.swift */,
+				FC7A723E1CF6F02200EEE87F /* RegExCategories.h */,
+				FC7A723F1CF6F02200EEE87F /* RegExCategories.m */,
 			);
 			name = "extension(扩展)";
 			path = extension;
@@ -608,12 +634,14 @@
 				FC9327FD1CE9B45F00CF3905 /* EventCellTableViewCell.xib in Resources */,
 				FCD6E8151CDD7936001B6A29 /* 798 in Resources */,
 				FCD6E81B1CDD7936001B6A29 /* Nears in Resources */,
+				FC5079341CF82CAA00FB05A4 /* SignUpViewController.xib in Resources */,
 				FCD6E81A1CDD7936001B6A29 /* More in Resources */,
 				FCD6E8181CDD7936001B6A29 /* events in Resources */,
 				FC9327C51CE9A59E00CF3905 /* ThemeCell.xib in Resources */,
 				FCD6E8161CDD7936001B6A29 /* Classify in Resources */,
 				FCD6E8201CDD7936001B6A29 /* fourpage-414w-736h@3x.jpg in Resources */,
 				FCD6E8211CDD7936001B6A29 /* fourpage-568h@2x.jpg in Resources */,
+				FC9045EB1CF7DDE200601008 /* ExploreBottomView.xib in Resources */,
 				FC7A7C5F1CF05EDA0027AFCB /* MyCenterViewController.xib in Resources */,
 				FCD6E81E1CDD7936001B6A29 /* 南锣鼓巷 in Resources */,
 			);
@@ -695,6 +723,9 @@
 				FC7596831CF2907100FBFB5A /* LoadAnimatImageView.swift in Sources */,
 				FCD6E8611CDDB9A4001B6A29 /* CityCollectionViewCell.swift in Sources */,
 				FC7A7C571CF04FB00027AFCB /* String+XMString.swift in Sources */,
+				FC7A72401CF6F02200EEE87F /* RegExCategories.m in Sources */,
+				FC7A72381CF6C76D00EEE87F /* DetailViewController.swift in Sources */,
+				FC9045E91CF7DDB900601008 /* ExploreBottomView.swift in Sources */,
 				FCD6E8551CDD8A90001B6A29 /* ExperienceViewController.swift in Sources */,
 				FCD6E8511CDD8A1B001B6A29 /* MainViewController.swift in Sources */,
 				FC75968C1CF2B1DD00FBFB5A /* ExperHeadPushViewController.swift in Sources */,
@@ -706,8 +737,10 @@
 				FCD6E87B1CDDE3C9001B6A29 /* DoubleTextView.swift in Sources */,
 				FCD6E8421CDD7BC0001B6A29 /* theme.swift in Sources */,
 				FCD6E7851CDD777C001B6A29 /* AppDelegate.swift in Sources */,
+				FC7A723A1CF6C81700EEE87F /* ExperienceWebView.swift in Sources */,
 				FCD6E8571CDD8AB4001B6A29 /* ExploreViewController.swift in Sources */,
 				FCD6E8631CDDBEB3001B6A29 /* CityHeadCollectionReusabaleView.swift in Sources */,
+				FC5079331CF82CAA00FB05A4 /* SignUpViewController.swift in Sources */,
 				FCD6E85B1CDD8B17001B6A29 /* ClassifyViewController.swift in Sources */,
 				FCD6E84D1CDD837E001B6A29 /* UIColor+XMColor.swift in Sources */,
 				FC44321F1CE082F1006DAB33 /* SwiftDictModel.swift in Sources */,
@@ -726,6 +759,7 @@
 				FC7A7C591CF0590C0027AFCB /* OrderViewController.swift in Sources */,
 				FC9327C41CE9A59E00CF3905 /* ThemeCell.swift in Sources */,
 				FC4EED4A1CED4FB000BE55F1 /* UserInfoManager.swift in Sources */,
+				FC5079301CF8247D00FB05A4 /* BuyDetailViewController.swift in Sources */,
 				FC1F10101CEEF93D00A5E942 /* ExperHeadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
